@@ -16,6 +16,7 @@ class Task(models.Model):
                              help_text="Task Title")
     description = models.TextField(max_length=300,
                                    verbose_name="Describe Task")
+
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
 
     def __str(self):
